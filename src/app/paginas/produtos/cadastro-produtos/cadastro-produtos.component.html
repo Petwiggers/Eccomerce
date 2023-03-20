@@ -1,0 +1,25 @@
+<form [formGroup]="produtoForm">
+  <div class="form-floating mb-3">
+    <input formControlName="id" type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">ID Do Produto</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input formControlName="nomeProduto" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Nome Do Produto</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input formControlName="quantidade" type="number" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Quantidade</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input formControlName="preco" type="number" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Preço</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingPassword" placeholder="Password" disabled >
+    <label  for="floatingPassword">Seu nome de Usuario: {{nomeUsuario}}</label>
+  </div>
+  <button class="btn btn-primary" (click)="onSubmit()">
+    Cadastrar
+  </button>
+</form>
